@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>NEON RUNNER — Cyberpunk Arcade Game</title>
+    <meta name="description" content="العب NEON RUNNER — لعبة أركيد سايبربانك مجانية في المتصفح! تجنب العقبات، اجمع النقاط، وتحدّ نفسك يومياً." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="NEON RUNNER — Cyberpunk Arcade" />
+    <meta property="og:description" content="لعبة أركيد مجانية في المتصفح — سايبربانك نيون بسرعة لا تتوقف!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://og-image.vercel.app/NEON%20RUNNER.png?theme=dark&md=1" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NEON RUNNER — Cyberpunk Arcade" />
+    <meta name="twitter:description" content="لعبة أركيد مجانية في المتصفح — سايبربانك نيون!" />
+
+    <!-- ====================================================
+         GOOGLE ADSENSE
+         استبدل ca-pub-XXXXXXXXXXXXXXXX بـ Publisher ID الخاص بك
+         من: https://adsense.google.com/adsense/signup
+         ==================================================== -->
+    <script async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+      crossorigin="anonymous">
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Orbitron:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- إعلان بانر أسفل الصفحة — يظهر فوق اللعبة على الموبايل -->
+    <div id="adsense-bottom" style="
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      text-align: center;
+      pointer-events: none;
+    ">
+      <ins class="adsbygoogle"
+        style="display:block; pointer-events:auto;"
+        data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+        data-ad-slot="AUTO"
+        data-ad-format="auto"
+        data-full-width-responsive="true">
+      </ins>
+    </div>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
